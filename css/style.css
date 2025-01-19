@@ -61,3 +61,11 @@
     background-color: #efefef;
     padding:5px 5px;
 }
+
+            /* nav section recposive*/
+@media screen and (max-width:576px){
+    .nav_section, .menu_section, .menu{
+        flex-direction: column;
+    }
+}
+

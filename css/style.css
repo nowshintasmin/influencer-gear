@@ -139,7 +139,7 @@ body{
 }
 @media screen and (max-width:576px) {
     .header_section{
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         
         
@@ -153,5 +153,18 @@ body{
         margin: 0 auto;
         padding: 0 5px;
     }
+    .header_section .img{
+        margin-top: 20px;
+    }
 
+}
+.main_section{
+
+}
+.main_section .logo_section{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    padding:36px 62px;
+    border:1px solid black;
 }

@@ -12,11 +12,15 @@
 :root{
     --button-color:#E02C6D;
     --font-color:rgba(58, 58, 58, 1);
+    --button-text-color:#FFFFFF;
 }
 .container{
     width: 1240px;
     margin:0 auto;
     padding:0 20px;
+}
+body{
+    width: 100%;
 }
 .nav_section{
     display:flex;
@@ -27,7 +31,7 @@
 
 .logo h3{
     font-weight: bold;
-    font-size:24px;
+    font-size:1.5rem;
     color:var(--font-color);
 }
 .menu{
@@ -42,7 +46,7 @@
     color:var(--font-color);
     margin-left: 34px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     transition: 0.5s;
 }
 .menu_section{
@@ -67,5 +71,87 @@
     .nav_section, .menu_section, .menu{
         flex-direction: column;
     }
+    .container{
+        width: 565px;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
 }
 
+            /* nav section stop*/
+
+            /*header section start*/
+
+.header_section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0 6px;
+    margin-top: 50px;
+    margin-bottom: 69px;
+}
+.header_section .text h1{
+    color:var(--font-color);
+    font-weight: bold;
+    font-size: 3.25rem;
+    margin-bottom: 16px;
+}
+.header_section .text p{
+    color:var(--font-color);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+.header_section .text button{
+    background-color: var(--button-color);
+    color:var(--button-text-color);
+    border:none;
+    padding:10px 24px;
+    border-radius: 41px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+.header_section .text button:hover{
+    background-color: var(--button-text-color);
+    color:var(--button-color);
+    border:1px solid var(--button-color);
+}
+.header_section .text button i{
+    margin-left: 8px;
+}
+.header_section .text{
+    margin-right: 133px;
+    max-width: 582px;
+    width: 100%;
+}
+.header_section .img{
+    background-image: url(../imges/Circle\ design.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.header_section .img img{
+    margin-top: 30px;
+    margin-left: 2px;
+    margin-right: 40px;
+    margin-bottom: 31px;
+}
+@media screen and (max-width:576px) {
+    .header_section{
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }
+    .header_section .text{
+        margin-bottom: 20px;
+        margin-left: 150px;
+    }
+    .container{
+        width: 565px;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+
+}
